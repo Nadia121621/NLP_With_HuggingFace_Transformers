@@ -12,6 +12,7 @@
 
 <h2 align="center"> Analisis </h2>
 *   Kode pipeline zero-shot classification dari pustaka Transformers untuk mengklasifikasikan teks tanpa pelatihan ulang pada label khusus. Pipeline dikonfigurasi untuk menentukan kategori teks yang berbunyi "This is a course about the Transformers library" di antara label kandidat "education," "politics," dan "business."
+
 *   Kode ini menggunakan pipeline zero-shot classification dari pustaka Transformers untuk mengklasifikasikan teks `"Segitiga Bermuda adalah sebuah wilayah di bagian barat Samudra Atlantik Utara"` dengan label kandidat tunggal, yaitu `"education"`. Meskipun konteks teks ini lebih berkaitan dengan geografi atau pengetahuan umum, model tetap akan mencoba mengaitkannya dengan label `"education"` karena itu satu-satunya pilihan yang diberikan.
 Alasannya adalah zero-shot classification bekerja dengan mencoba menemukan hubungan antara teks dan label yang disediakan, bahkan jika label tersebut tidak langsung berkaitan dengan topik teks. Dalam kasus ini, meskipun teks mengenai Segitiga Bermuda lebih terkait dengan informasi geografis, model dapat menganggapnya sebagai bagian dari "education" dalam konteks pengetahuan umum. Karena hanya ada satu label, hasilnya mungkin menampilkan skor tinggi untuk "education," meskipun kecocokannya dengan topik pendidikan mungkin tidak terlalu kuat.
 *   Input Teks dan Label Kandidat
